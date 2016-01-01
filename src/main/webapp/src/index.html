@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular 2 boilerplate</title>
+
+  <link href="lib/bootstrap/css/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+
+  <script src="lib/angular2-polyfills.js"></script>
+  <script src="lib/system.src.js"></script>
+  <script src="lib/Rx.js"></script>
+  <script src="lib/angular2.dev.js"></script>
+  <script src="lib/http.dev.js"></script>
+
+  <script>
+    System.config({
+      packages: {
+        'app': {
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('app/boot')
+      .then(null, console.error.bind(console));
+  </script>
+</head>
+
+<body>
+  <app>Loading...</app>
+</body>
+
+</html>
